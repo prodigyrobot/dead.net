@@ -1,4 +1,8 @@
 # dead.net
+
+
+![alt tag](https://serverbabyblog.files.wordpress.com/2014/03/anonym.jpg)
+
 social network for antisocial, criminal, frightened, security aware and otherwise sick people
 
 This is a cool social network platform with following targets:
