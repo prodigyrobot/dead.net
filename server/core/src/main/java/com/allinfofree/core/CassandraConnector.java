@@ -32,7 +32,7 @@ public class CassandraConnector{
 	public CassandraClusterFactoryBean cluster() {
         CassandraClusterFactoryBean cluster = new CassandraClusterFactoryBean();
 	    cluster.setContactPoints(env.getProperty("cassandra.contactpoints"));
-	    //cluster.setPort(Integer.parseInt(env.getProperty("cassandra.port")));
+	    cluster.setPort(Integer.parseInt(env.getProperty("cassandra.port")));
         return cluster;
 	}
 
