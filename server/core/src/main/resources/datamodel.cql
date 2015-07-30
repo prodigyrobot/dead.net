@@ -8,3 +8,10 @@ CREATE TABLE info(
   pic text,
   active boolean
 );
+
+CREATE TABLE shadow(
+  id uuid PRIMARY KEY,
+  nick text,
+  avatar text,
+  motto text
+);
