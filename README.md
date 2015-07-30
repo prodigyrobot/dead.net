@@ -3,21 +3,24 @@ social network for antisocial, criminal, frightened, security aware and otherwis
 
 This is a cool social network platform with following targets:
 
--full anonymity possible
 
--no possibility for gov or cops to trace user identity
+-full anonymity and identity change are possible
 
--user does not matter, only information
 
--no human moderator allowed
+-no possibility for gov or cops to trace user identity or prove user connection to information
 
--no activity logs
 
--user can easily change identity
+-user does not matter, even YOU, only information
 
--info stored only while it matters
 
--one click account deletion with no way to restore
+-no human moderator allowed (they all bastards)
+
+
+-info stored only while it matters, dead info deleted
+
+
+-one click account deletion with no way to restore or trace identity is possible
+
 
 
 Based on spring, cassandra and akka
