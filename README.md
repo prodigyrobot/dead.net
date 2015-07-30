@@ -1,7 +1,7 @@
 # dead.net
 
 
-![alt tag](https://serverbabyblog.files.wordpress.com/2014/03/anonym.jpg)
+![alt tag](https://serverbabyblog.files.wordpress.com/2015/07/2015-07-30-23-14-26.png)
 
 social network for antisocial, criminal, frightened, security aware and otherwise sick people
 
