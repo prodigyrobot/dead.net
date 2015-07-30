@@ -14,13 +14,13 @@ This is a cool social network platform with following targets:
 -no possibility for gov or cops to trace user identity or prove user connection to information
 
 
--user does not matter, even YOU, only information
+-user does not matter, even YOU!, only information matters
 
 
--no human moderator allowed (they all bastards)
+-no human moderator allowed (they are all bastards, as we know)
 
 
--info stored only while it matters, dead info deleted
+-info stored only while it matters, dead info deleted immediatelly
 
 
 -one click account deletion with no way to restore or trace identity is possible
