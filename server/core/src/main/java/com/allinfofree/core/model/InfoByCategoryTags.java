@@ -11,12 +11,12 @@ import lombok.Data;
 
 
 
-@Table(value = "info_by_category_time")
+@Table(value = "info_by_category_tags")
 @Data
-public class InfoByCategoryTime {
+public class InfoByCategoryTags {
 	
 	@PrimaryKey
-	private InfoByCategoryTimeKey key;
+	private InfoByCategoryTagsKey key;
 	
 	@Column(value = "id")
 	private UUID id;

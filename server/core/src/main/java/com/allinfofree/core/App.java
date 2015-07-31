@@ -5,7 +5,6 @@ import java.util.UUID;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import com.allinfofree.core.model.Info;
 import com.allinfofree.core.model.Shadow;
 import com.allinfofree.core.services.InfoService;
 
@@ -23,9 +22,7 @@ public class App {
     	
     	Shadow sh = service.addShadow(UUID.randomUUID(), "shadow");
     	
-    	Info info = service.add(UUID.randomUUID(), "new article", "they are dead", "babyboy");
     	
-    	service.publish(info.getId(), sh.getId());
     	
     }
 	

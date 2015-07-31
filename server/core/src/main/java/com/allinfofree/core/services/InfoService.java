@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.core.CassandraOperations;
 import org.springframework.stereotype.Service;
 
-import com.allinfofree.core.model.Info;
 import com.allinfofree.core.model.Shadow;
-import com.allinfofree.core.repository.InfoRepository;
+import com.allinfofree.core.repository.InfoByCategoryTagsRepository;
+import com.allinfofree.core.repository.InfoByCategoryTimeRepository;
 import com.allinfofree.core.repository.ShadowRepository;
 
 @Service
@@ -19,48 +19,19 @@ public class InfoService {
 	
 	
 	@Autowired
-	private InfoRepository infoRepository;
+	private InfoByCategoryTagsRepository infoByCategoryTagsRepository;
+	
+	@Autowired
+	private InfoByCategoryTimeRepository infoByCategoryTimeRepository;
+	
 	@Autowired
 	private ShadowRepository shadowRepository;
 	
 	
 	/** Info **/
-	public Info add(UUID id, String title, String subtitle, String authornick){
-		Info info = new Info(id, title, subtitle, authornick);
-		return infoRepository.save(info);
-	}
+	public void add(){}
 	
-	public Info expandbyInfo(UUID id, String infoText){
-		Info info = infoRepository.findOne(id);
-		info.setInfo(infoText);
-		return infoRepository.save(info);
-	}
 	
-	public Info expandbyLink(UUID id, String text){
-		Info info = infoRepository.findOne(id);
-		info.setLink(text);
-		return infoRepository.save(info);
-	}
-	
-	public Info expandbyPic(UUID id, String text){
-		Info info = infoRepository.findOne(id);
-		info.setPic(text);
-		return infoRepository.save(info);
-		
-	}
-	
-	public Info publishAnonymously(UUID id){
-		Info info = infoRepository.findOne(id);
-		info.setActive(true);
-		return infoRepository.save(info);
-	}
-	
-	public Info publish(UUID id, UUID shadowId){
-		Info info = infoRepository.findOne(id);
-		info.setActive(true);
-		//associate with shadow
-		return infoRepository.save(info);
-	}
 	
 	/** Shadow **/
 	public Shadow addShadow(UUID id, String nick){
