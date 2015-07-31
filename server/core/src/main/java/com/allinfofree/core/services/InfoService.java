@@ -3,6 +3,7 @@ package com.allinfofree.core.services;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.cassandra.core.CassandraOperations;
 import org.springframework.stereotype.Service;
 
 import com.allinfofree.core.model.Info;
@@ -12,6 +13,9 @@ import com.allinfofree.core.repository.ShadowRepository;
 
 @Service
 public class InfoService {
+	
+	@Autowired
+	CassandraOperations cassandraOperations;
 	
 	
 	@Autowired
